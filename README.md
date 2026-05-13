@@ -1,16 +1,72 @@
-# React + Vite
+ # 📋 NoteIt — Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight and responsive notes app where you can create, edit, delete, and search your notes. Built while learning React state management with Redux Toolkit.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+> Coming soon / [Add your Vercel or Netlify link here]
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **React** — UI and component structure
+- **Redux Toolkit** — global state management
+- **React Router DOM** — client-side routing
+- **Tailwind CSS** — styling and responsive design
+- **LocalStorage** — data persistence without a backend
+- **React Hot Toast** — user feedback notifications
+- **Lucide React** — clean icon set
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 📝 Create notes with a title and content
+- ✏️ Edit any existing note
+- 🗑️ Delete notes with a single click
+- 🔍 Search notes by title in real time
+- 👁️ View a note in read-only mode
+- 📋 Copy note content to clipboard
+- 💾 Notes persist on page refresh using localStorage
+- 🚫 Prevents saving empty notes
+
+---
+
+## 📁 Folder Structure 
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Home.jsx
+│   ├── Paste.jsx
+│   └── ViewPaste.jsx
+├── redux/
+│   ├── store.js
+│   └── notesSlice.js
+├── data/
+│   └── NavbarData.js
+├── utils/
+│   └── formatDate.js
+├── App.jsx
+├── main.jsx
+└── index.css
+
+## 🧠 What I Learned
+
+- Managing global state with Redux Toolkit slices and reducers
+- Syncing Redux state with localStorage for persistence
+- Using `useSearchParams` to handle edit mode via URL
+- Component-level filtering without any backend
+- Building a clean UI with Tailwind utility classes
+
+---
+
+## 📌 Known Limitations
+
+- No backend — data is stored only in the browser's localStorage
+- Notes are device-specific and not shareable across devices
+
+## 🙋‍♂️ Author
+Prathamesh Raut
+- GitHub:Rprathamesh04
